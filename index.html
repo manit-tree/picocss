@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pico.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="align-center">Hello Pico !</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+        non explicabo. Distinctio reprehenderit error unde veritatis ad est ea
+        quaerat voluptatum odit reiciendis. Nulla provident alias porro unde qui
+        voluptas? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Explicabo, dolorem quod quidem temporibus tenetur voluptatem, dolores
+        architecto aspernatur voluptatum omnis doloribus quia? Quia qui ut
+        suscipit libero molestiae perferendis magni!
+      </p>
+      
+      <!-- Accordions -->
+      <section id="accordions">
+        <h2>Accordions</h2>
+        <details>
+          <summary>Accordion 1</summary>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam,
+            tincidunt nec porta sed, auctor id velit. Etiam venenatis nisl ut orci consequat, vitae
+            tempus quam commodo. Nulla non mauris ipsum. Aliquam eu posuere orci. Nulla convallis
+            lectus rutrum quam hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar
+            mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices, porta turpis sit
+            amet, congue turpis.
+          </p>
+        </details>
+        <details open>
+          <summary>Accordion 2</summary>
+          <ul>
+            <li>Vestibulum id elit quis massa interdum sodales.</li>
+            <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
+            <li>Quisque sed eros non eros ornare elementum.</li>
+            <li>Cras sed libero aliquet, porta dolor quis, dapibus ipsum.</li>
+          </ul>
+        </details>
+      </section>
+      <!-- ./ Accordions -->
+
+      <!-- Article-->
+      <article id="article">
+        <h2>Article</h2>
+        <p>
+          Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed
+          ultricies dolor non ante vulputate hendrerit. Vivamus sit amet
+          suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc
+          placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra
+          rutrum.
+        </p>
+        <footer>
+          <small
+            >Duis nec elit placerat, suscipit nibh quis, finibus neque.</small
+          >
+        </footer>
+      </article>
+      <!-- ./ Article-->
+
+      <label for="switch1" class="align-center mb-40">
+        <input type="checkbox" id="switch1" name="switch-1" role="switch" checked="">
+        Dark Theme
+        </label>
+
+      <div class="align-center">
+        <a
+          id="btn1"
+          role="button"
+          href="#"
+          data-target="dialog1"
+          onclick="toggleModal(event)"
+          >Show Modal</a
+        >
+      </div>
+    </main>
+
+    <dialog id="dialog1">
+      <article>
+        <header>
+          <a
+            href="#close"
+            aria-label="Close"
+            class="close"
+            data-target="dialog1"
+            onclick="toggleModal(event)"
+          ></a>
+          Hello PicoCSS
+        </header>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+          non explicabo. Distinctio reprehenderit error unde veritatis ad est ea
+          quaerat voluptatum odit reiciendis. Nulla provident alias porro unde
+          qui voluptas? Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Explicabo, dolorem quod quidem temporibus tenetur voluptatem,
+          dolores architecto aspernatur voluptatum omnis doloribus quia? Quia
+          qui ut suscipit libero molestiae perferendis magni!
+        </p>
+        <footer>
+          <!-- <button data-role="close">Close</button> -->
+          <a
+            href="#close"
+            role="button"
+            data-target="dialog1"
+            onclick="toggleModal(event)"
+            >Close</a
+          >
+        </footer>
+      </article>
+    </dialog>
+    <script src="./js/minimal-theme-switcher.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
